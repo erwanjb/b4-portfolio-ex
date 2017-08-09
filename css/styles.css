@@ -11,3 +11,31 @@
     min-height: 100vh;
   }
 }
+
+#portfolio a {
+    display: block;
+    background-color: black;
+    overflow: hidden;
+}
+#portfolio a:hover img {
+    transform: scale(1.20);
+    opacity: 0.5;
+}
+#portfolio img {
+    margin-bottom: 0 !important;
+    transition: 0.7s;
+}
+#portfolio figure {
+    position: relative;
+}
+#portfolio figure figcaption {
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50vh);
+    color: rgba(255, 255, 255, 0);
+    transition: 0.7s;
+}
+#portfolio figure:hover figcaption {
+    transform: translateY(0);
+    color: rgba(255, 255, 255, 1);
+}
